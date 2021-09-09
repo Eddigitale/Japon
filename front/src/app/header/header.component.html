@@ -1,0 +1,123 @@
+<header>
+  <div class="header">
+    <div class="banniere">
+      <div class="logo" (click)="afficherMenu()">
+        <img class="imglogo" src="http://bariserv.net:3000/nihonniikou/home/logo.jpg" alt="logo">
+        <div class="menu">MENU</div>
+      </div>
+      <div class="titre">
+        <h1>日本に行こう！</h1>
+      </div>
+    </div>
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="Home">Accueil</a>
+          </li>
+          <li>
+            <a routerLink="Places">Les incontournables</a>
+          </li>
+          <li>
+            <a routerLink="History">Histoire du Japon</a>
+          </li>
+          <li>
+            <a routerLink="Festival">Festivals</a>
+          </li>
+          <li>
+            <a routerLink="Cooking">Gastronomie</a>
+          </li>
+          <li>
+            <a routerLink="Myths">Mythes et légendes</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navigation2" [ngClass]="{'isOpen': buttonClicked}">
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="Home">Accueil</a>
+          </li>
+          <li>
+            <a routerLink="Places">Les incontournables</a>
+          </li>
+          <li>
+            <a routerLink="History">Histoire du Japon</a>
+          </li>
+          <li>
+            <a routerLink="Festival">Festivals</a>
+          </li>
+          <li>
+            <a routerLink="Cooking">Gastronomie</a>
+          </li>
+          <li>
+            <a routerLink="Myths">Mythes et légendes</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <carousel [isAnimated]="true" [interval]="5000">
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/tokyo.jpg" alt="tokyo" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Tokyo</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/kyoto.jpg" alt="kyoto" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Kyoto</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/hakone.jpg" alt="hakone" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Hakone</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/himeji.jpg" alt="himeji" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Himeji</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/hiroshima.jpg" alt="hiroshima" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Hiroshima</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/kamakura.jpg" alt="kamakura" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Kamakura</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/miyajima.jpg" alt="miyajima" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Miyajima</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/nara.jpg" alt="nara" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Nara</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/okinawa.png" alt="okinawa" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Okinawa</p>
+      </div>
+    </slide>
+    <slide>
+      <img class="imgcarousel" src="http://bariserv.net:3000/nihonniikou/header/osaka.jpg" alt="osaka" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Osaka</p>
+      </div>
+    </slide>
+  </carousel>
+</header>

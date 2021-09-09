@@ -1,0 +1,86 @@
+.red {
+  background: url("http://bariserv.net:3000/nihonniikou/home/poisson.png") repeat-y center;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  width: 10%;
+}
+
+.credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: rgb(214, 214, 214) solid 1px;
+  font-style: italic;
+  color: rgb(158, 158, 158);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a {
+  color: red;
+}
+
+.main {
+  width: 80%;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.articles {
+  border: rgb(214, 214, 214) solid 1px;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.articles:hover {
+  box-shadow: gray 5px 5px 10px;
+}
+
+h1 {
+  margin-top: 1%;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+}
+
+h2 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+p {
+  padding: 2%;
+  font-size: 14px;
+}
+
+.presentation {
+  width: 50%;
+  margin: auto;
+}
+
+@media all and (max-width: 800px) {
+
+  .articles,
+  .presentation {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .red {
+    background: red;
+  }
+}

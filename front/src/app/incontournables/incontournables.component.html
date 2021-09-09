@@ -1,0 +1,30 @@
+<div class="contenu">
+  <div class="red"></div>
+  <div class="main">
+    <h1>Lieux incontournables</h1>
+    <p class="presentation">
+      Le Japon est un pays merveilleux.
+      Sa culture, ses paysages changeants et sa cuisine orientale font de ce pays une véritable destination de rêve.
+      Ce pays a de très grandes villes à offrir telles que Tokyo ou Osaka où technologies et gratte-ciels se mélangent
+      pour donner des villes incroyablement vivantes et colorées, ou bien des villes bien plus calmes, comme Nara, où la
+      nature est à son comble et où l'on peut en contempler sa beauté.
+      Vous êtes à la recherche de culture et de légendes?
+      De nombreux temples remplis d'histoire sont dispersés dans tout le pays, vous offrant calme et sérénité.
+      Bien entendu, activités physiques ou ludiques seront également au rendez-vous entre le ski, les randonnées, les
+      différents karaoke ou encore les incroyables parcs d'attractions situés partout dans le pays.
+      Et comment oublier les sources chaudes? Profitez d'un grand moment de détente en essayant les onsen de Hakone ou
+      de Beppu.
+      Bref, le Japon est une destination idéale si vous souhaitez passer un moment inoubliable!
+    </p>
+    <span *ngFor="let row of placesList">
+      <div class="articles">
+        <h2>{{row.Titre}}</h2>
+        <img [src]="row.Image" alt="image">
+        <p>
+          {{row.Description}}
+        </p>
+      </div>
+    </span>
+  </div>
+  <div class="red"></div>
+</div>

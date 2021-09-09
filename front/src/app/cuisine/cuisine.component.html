@@ -1,0 +1,23 @@
+<div class="contenu">
+  <div class="red"></div>
+  <div class="main">
+    <h1>Gastronomie japonaise</h1>
+    <p class="presentation">
+      Vous le savez, la cuisine japonaise est aujourd'hui très réputée dans le monde entier.
+      Certains plats sont très connus, comme les onigiris, les sushis, ou encore les yakitoris, d'autres sont moins
+      connus mais néanmoins délicieux.
+      J'ai donc décidé de vous montrer une petite liste de plats que je trouve succulents, ainsi qu'un lien vers
+      Marmiton, très bon site de recettes que j'utilise tout le temps.
+    </p>
+    <span *ngFor="let row of recipesList">
+      <div class="articles">
+        <h2>{{row.Titre}}</h2>
+        <img [src]="row.Image" alt="plats">
+        <p>
+          <a [href]="row.Lien" target="_blank">&rArr;Lien vers la recette</a>
+        </p>
+      </div>
+    </span>
+  </div>
+  <div class="red"></div>
+</div>

@@ -1,0 +1,192 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.banniere {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre {
+  width: 94%;
+  margin: auto;
+}
+
+.logo {
+  width: 6%;
+}
+
+.imglogo {
+  width: 100%;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+li:hover {
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.imgcarousel {
+  height: 30vh;
+}
+
+.carousel-caption {
+  height: 100%;
+}
+
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0%;
+  font-size: 14px;
+}
+
+.navigation2 {
+  display: none;
+}
+
+.div-btn {
+  display: none;
+}
+
+.btn-navigation .barre {
+  width: 30px;
+  height: 3px;
+  background: red;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.menu {
+  display: none;
+}
+
+@media all and (max-width: 860px) {
+  .menu {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .div-btn {
+    display: block;
+    width: 7%;
+    padding: 5% 2%;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-bottom: 2%;
+    border-bottom: 1px solid red;
+    margin-top: 13%;
+    z-index: 20;
+    background: white;
+    width: 100%;
+    transform: translateY(-130%);
+    transition: transform .6s ease-in-out;
+  }
+
+  .isOpen {
+    transform: translateY(0%);
+  }
+
+  .imgcarousel {
+    height: 15vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 7px;
+    margin-top: 2%
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+  }
+
+  nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 15%;
+    cursor: pointer;
+    animation: mymove 3s infinite;
+  }
+
+  @keyframes mymove {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+      ;
+    }
+  }
+
+  .titre {
+    width: 78%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .isOpen {
+    transform: translateY(2%);
+  }
+}

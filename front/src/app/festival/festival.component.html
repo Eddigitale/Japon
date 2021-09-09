@@ -1,0 +1,27 @@
+<div class="contenu">
+  <div class="red"></div>
+  <div class="main">
+    <h1>Les différents festivals</h1>
+    <p class="presentation">
+      Au Japon, plusieurs festivals traditionnels se déroulent tout au long de l'année pour amuser petits et grands.
+      C'est l'occasion de s'habiller avec des vêtements traditionnels, comme les kimonos.
+      Différents stands de nourriture sont installés dans les rues et c'est aussi l'occasion d'admirer les magnifiques
+      feux d'artifice qui ont lieu à certaines occasions.
+      Je vous propose donc de découvrir une liste des festivals les plus célèbres.
+    </p>
+    <span *ngFor="let row of festivalsList">
+      <div class="articles">
+        <h2>{{row.Titre}}</h2>
+        <img [src]="row.Image" alt="image">
+        <div class="credit">
+          {{row.Attribution}}<br>
+          <a [href]="row.Lien" target="_blank">Lien original</a>
+        </div>
+        <p>
+          {{row.Description}}
+        </p>
+      </div>
+    </span>
+  </div>
+  <div class="red"></div>
+</div>

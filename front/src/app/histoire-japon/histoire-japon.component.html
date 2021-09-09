@@ -1,0 +1,21 @@
+<div class="contenu">
+  <div class="red"></div>
+  <div class="main">
+    <h1>L'histoire du Japon</h1>
+    <p class="presentation">
+      L’histoire du japon est quelque chose de très complexe.
+      De nombreuses ères et empires se sont succédes au fil des siècles, et il peut parfois être difficile de s'y
+      repérer.
+      Voici donc un bref résumé des grands évènements qui ont marqué l'histoire de ce pays.
+    </p>
+    <span *ngFor="let row of eventsList; let i = index">
+      <div class="articles">
+        <h2>{{row.Titre}}</h2>
+        <p>{{row.Description}}</p>
+      </div>
+      <img src="../../assets/img/history/fleche.png" class="rounded mx-auto d-block" alt="fleche"
+        *ngIf="i < eventsList.length-1">
+    </span>
+  </div>
+  <div class="red"></div>
+</div>
